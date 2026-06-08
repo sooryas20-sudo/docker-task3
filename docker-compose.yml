@@ -1,0 +1,9 @@
+services:
+  web:
+    image: sooryas20/custom-nginx:latest
+    container_name: custom-nginx-app
+    ports:
+      - "80:80"
+    volumes:
+      - /var/opt/nginx:/usr/share/nginx/html
+    restart: always
